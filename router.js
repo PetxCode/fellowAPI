@@ -158,6 +158,7 @@ router.post("/candidate/create", verified, upload, async (req, res) => {
         name,
         position,
         point,
+        toggle: false,
         avatar: image.secure_url
       });
       res
