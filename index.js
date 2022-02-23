@@ -14,7 +14,7 @@ mongoose.connect(url_online).then(() => {
   console.log("db is now connected...!");
 });
 
-app.use(cors({ origin: "*" }));
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
