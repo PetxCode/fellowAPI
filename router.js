@@ -196,7 +196,8 @@ router.patch("/candidate/:id", async (req, res) => {
     const getCandidates = await candidateModel.findByIdAndUpdate(
       req.params.id,
       {
-        point: req.body.point
+        point: req.body.point,
+        toggle: req.body.toggle
       },
       { new: true }
     );
