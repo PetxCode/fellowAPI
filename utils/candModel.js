@@ -10,6 +10,10 @@ const candidateModel = mongoose.Schema(
     point: {
       type: Number
     },
+    toggle: {
+      type: Boolean,
+      
+    },
     avatar: {
       type: String
     }
