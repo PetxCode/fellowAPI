@@ -18,7 +18,7 @@ const candidateModel = mongoose.Schema(
       type: String
     },
       who: {
-      type: String
+      type: Boolean
     },
   },
   {
