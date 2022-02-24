@@ -16,7 +16,10 @@ const candidateModel = mongoose.Schema(
     },
     avatar: {
       type: String
-    }
+    },
+      who: {
+      type: String
+    },
   },
   {
     timestamps: true
