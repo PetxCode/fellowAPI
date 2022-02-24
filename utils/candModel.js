@@ -12,13 +12,15 @@ const candidateModel = mongoose.Schema(
     },
     toggle: {
       type: Boolean,
-      
+    },
+    toggle1: {
+      type: Boolean,
     },
     avatar: {
       type: String
     },
       who: {
-      type: Boolean
+      type: String
     },
   },
   {
