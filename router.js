@@ -200,7 +200,9 @@ router.patch("/candidate/:id", async (req, res) => {
       req.params.id,
       {
         point: req.body.point,
-        toggle: req.body.toggle
+        toggle: req.body.toggle,
+        toggle1: req.body.toggle1,
+        who: req.body.who,
       },
       { new: true }
     );
