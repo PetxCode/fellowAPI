@@ -88,7 +88,8 @@ router.post("/voter/register", upload, async (req, res) => {
       name,
       email,
       password: hash,
-      avatar: image.secure_url
+      avatar: image.secure_url,
+      who: ""
     });
     res.status(200).json({ message: "created successfully", data: getVoters });
   } catch (err) {
