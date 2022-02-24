@@ -160,7 +160,7 @@ router.post("/candidate/create", verified, upload, async (req, res) => {
         point,
         toggle: false,
         avatar: image.secure_url,
-        who: ""
+        who: false
       });
       res
         .status(200)
